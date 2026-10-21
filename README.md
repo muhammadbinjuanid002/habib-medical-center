@@ -1,12 +1,41 @@
-# Habib Medical Center - landing page demo
+# Habib Medical Center — landing page demo
 
-Preview design by MO Digital. Not affiliated with Habib Medical Center.
+A single-page design preview prepared by **MO Digital** for Habib Medical Center.
 
-- Clinic: Habib Medical Center
-- Address: BS/3 Karimabad, FB Area Block 4, Karachi
-- Phone: 021-36349683
-- Live demo: https://habib-medical-center.vercel.app
+> This is a design preview. It is not the official website of Habib Medical Center,
+> and Habib Medical Center is not affiliated with MO Digital. The contact details shown
+> are the clinic's own public details.
 
-This repository holds a single self-contained `index.html` (Tailwind CSS inlined, no external requests, no build step). The page is a design preview built by MO Digital for Habib Medical Center, Karachi.
+## Live preview
 
-Booking on the page: Call the clinic.
+https://habib-medical-center.vercel.app
+
+## What is in here
+
+| Path | What it is |
+|---|---|
+| `index.html` | The whole page: markup, inlined CSS and inlined JS in one file |
+| `assets/img/` | Photography, cropped WebP, served from this repo (no third-party hotlinking) |
+| `assets/fonts/` | Instrument Serif + Inter Tight, subset WOFF2, served from this repo |
+| `vercel.json` | Vercel project settings (`outputDirectory: "."`) |
+
+## Design notes
+
+- Dark editorial canvas, cream type, one warm accent per clinic.
+- Instrument Serif for display, Inter Tight for interface and body copy.
+- Scroll reveal via `IntersectionObserver`; respects `prefers-reduced-motion`.
+- Horizontal treatment carousel with a `01 / NN` counter, built in plain JS.
+- Mobile-first: the layout is designed at 390px and scales up.
+- No framework, no build step, no external requests at runtime.
+
+## Booking
+
+Phone booking on **021-36349683** - the clinic has no mobile line, so the call to action is a tap-to-call button rather than WhatsApp.
+
+## Data shown
+
+Clinic name, address, phone number and the Google rating (3.4 stars, 183 reviews) are the clinic's own verified public details. No doctors, prices, testimonials or opening hours have been invented.
+
+---
+
+Design and build by [MO Digital](https://bymo.vercel.app)
